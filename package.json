@@ -1,0 +1,14 @@
+{
+  "name": "pastebin-lite-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "echo 'Run client and backend separately for local dev'",
+    "install-all": "npm install && cd client && npm install",
+    "build": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "nanoid": "^5.0.4",
+    "pg": "^8.11.3"
+  }
+}
