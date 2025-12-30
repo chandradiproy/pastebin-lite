@@ -2,13 +2,16 @@
   "name": "pastebin-lite-monorepo",
   "version": "1.0.0",
   "scripts": {
-    "dev": "echo 'Run client and backend separately for local dev'",
-    "install-all": "npm install && cd client && npm install",
-    "build": "cd client && npm install && npm run build"
+    "install-all": "npm install && cd client && npm install && cd ../api && npm install",
+    "build": "cd client && npm install && npm run build",
+    "dev": "vercel dev"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
     "nanoid": "^5.0.4",
     "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "vercel": "^50.1.3"
   }
 }

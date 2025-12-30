@@ -10,5 +10,6 @@
     }
   ],
   "buildCommand": "cd client && npm install && npm run build",
+  "devCommand": "cd api && npm start && cd ../client && npm run dev",
   "outputDirectory": "client/dist"
 }
