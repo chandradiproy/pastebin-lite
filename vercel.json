@@ -10,6 +10,7 @@
     }
   ],
   "buildCommand": "cd client && npm install && npm run build",
+  "outputDirectory": "client/dist",
   "devCommand": "cd client && npm run dev",
-  "outputDirectory": "client/dist"
+  "framework": "vite"
 }
