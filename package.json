@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd client && npm install && npm run build"
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "dev": "echo 'Run: npm run dev --prefix server AND npm run dev --prefix client (in separate terminals)'"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "nanoid": "^5.0.7",
     "pg": "^8.11.5"
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=18.0.0"
   }
 }
