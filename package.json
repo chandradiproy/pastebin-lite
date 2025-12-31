@@ -1,17 +1,16 @@
 {
   "name": "pastebin-lite-monorepo",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "install-all": "npm install && cd client && npm install && cd ../api && npm install",
-    "build": "cd client && npm install && npm run build",
-    "dev": "vercel dev"
+    "build": "cd client && npm install && npm run build"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "nanoid": "^5.0.4",
-    "pg": "^8.11.3"
+    "dotenv": "^16.4.5",
+    "nanoid": "^5.0.7",
+    "pg": "^8.11.5"
   },
-  "devDependencies": {
-    "vercel": "^50.1.3"
+  "engines": {
+    "node": "18.x"
   }
 }

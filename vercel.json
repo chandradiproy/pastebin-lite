@@ -6,10 +6,10 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/client/dist/index.html"
+      "destination": "/client/index.html"
     }
   ],
   "buildCommand": "cd client && npm install && npm run build",
-  "devCommand": "cd api && npm start && cd ../client && npm run dev",
+  "devCommand": "cd client && npm run dev",
   "outputDirectory": "client/dist"
 }

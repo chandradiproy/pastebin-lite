@@ -1,6 +1,6 @@
 // api/pastes/index.js
 import { nanoid } from "nanoid";
-import pool from "./_utils/db.js";
+import pool from "../_utils/db.js";
 
 export default async function handler(req, res) {
   // Only allow POST
